@@ -3,13 +3,13 @@
 const PHONE_NUMBER = "5511999999999";
 
 const DEFAULT_MESSAGE =
-  "Olá! Quero fazer um pedido com o cardápio da Lojista Food para minha loja no shopping.";
+  "Olá! Quero fazer um pedido! ";
 
 function openWhatsApp(itemText) {
   const text = itemText || DEFAULT_MESSAGE;
   const message = `Olá! Vim pelo site da Lojista Food e quero pedir: ${text}.`;
   const encoded = encodeURIComponent(message);
-  const url = `https://wa.me/${11999572166}?text=${encoded}`;
+  const url = `https://wa.me/${5511999572166}?text=${encoded}`;
   window.open(url, "_blank");
 }
 
