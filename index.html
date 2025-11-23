@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lojista Food | Cardápio de Baguetes & Bebidas</title>
+  <title>Lojista Food | Cardápio para Lojistas</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <!-- FUNDO DECORATIVO -->
   <div class="bg-pattern"></div>
+
+  <!-- AVISO TOPO -->
+  <div class="top-alert">
+    ⚠️ Atenção lojistas: marcamos para o dia 20 e quinto dia útil apenas para lojistas fixos.
+    Para pedidos extras, o pagamento é realizado na hora.
+  </div>
 
   <!-- CABEÇALHO / HERO -->
   <header class="header">
     <div class="header-content">
       <div class="brand">
-        <!-- TROCAR O SRC PELO ARQUIVO REAL DO LOGO -->
         <img src="./assets/logo-lojistafood.png" alt="Lojista Food" class="brand-logo" />
         <div class="brand-text">
           <h1>Lojista Food</h1>
@@ -23,10 +30,10 @@
       </div>
 
       <div class="hero-info">
-        <h2>Baguetes e bebidas <span>sem sair da loja</span> 🥖🥤</h2>
+        <h2>Lanches e bebidas <span>sem sair da loja</span> 🥖🥤</h2>
         <p>
-          Você cuida das vendas, a gente cuida do seu lanche. Peça pelo WhatsApp e receba na sua loja
-          baguetes naturais caprichadas e bebidas geladinhas.
+          Você cuida das vendas, a gente cuida do seu lanche.
+          Peça pelo WhatsApp e receba na sua loja lanches caprichados e bebidas geladinhas.
         </p>
 
         <div class="hero-tags">
@@ -36,76 +43,63 @@
         </div>
 
         <button class="btn btn-main js-open-whatsapp"
-                data-item="Quero ver o cardápio completo da Lojista Food e fazer meu pedido">
+          data-item="Quero ver o cardápio completo da Lojista Food e fazer meu pedido">
           Pedir agora pelo WhatsApp
         </button>
       </div>
     </div>
   </header>
 
+  
+
   <!-- CARDÁPIO -->
   <main class="menu">
+
+    <!-- LANCHE PÃO FRANCÊS (ATIVO) -->
     <section class="menu-section">
       <div class="section-header">
-        <h3>🥖 Baguetes Naturais</h3>
-        <p>Escolha seu lanche, clique em “Pedir no WhatsApp” e pronto.</p>
+        <div class="section-header-main">
+          <h3>🥪 Lanche no Pão Francês</h3>
+          <span class="badge-now">Pronto pra pedir</span>
+        </div>
+        <p>Lanche caprichado feito no pão francês, perfeito para o intervalo rápido do lojista.</p>
       </div>
 
-      <div class="menu-grid">
-        <!-- ITEM 1 -->
-        <article class="menu-card">
-          <div class="menu-tag menu-tag-hit">Mais pedido</div>
+      <div class="menu-grid single-grid">
+        <article class="menu-card menu-card-highlight">
+          <div class="menu-tag menu-tag-hit">Favorito do lojista</div>
           <div class="menu-image-wrapper">
-            <!-- TROCAR PELA FOTO REAL -->
-            <img src="./assets/baguete-presunto e queijo.png"
-                 alt="Baguete de presunto e queijo"
-                 class="menu-image" />
+            <!-- TROCAR PELA FOTO REAL, SE QUISER -->
+            <img src="./assets/paofrances.png" alt="Lanche no pão francês" class="menu-image" />
           </div>
           <div class="menu-body">
-            <h4>Baguete Presunto & Queijo</h4>
+            <h4>Pão Francês Misto Especial</h4>
             <p class="menu-desc">
-              Pão francês crocante, maionese especial da casa, queijo, presunto e alface
-              bem fresquinho. Clássico, rápido e caprichado.
+              Pão francês, queijo mussarela, presunto, maionese especial da casa, alface fresquinho e um toque de azeite
+              de oliva.
             </p>
             <ul class="menu-details">
-              <li>Ideal para a correria entre um cliente e outro</li>
-              <li>Combina perfeitamente com Coca-Cola lata</li>
+              <li>Feito na hora, ideal para o intervalo entre atendimentos</li>
+              <li>Combina demais com Coca-Cola gelada</li>
             </ul>
-            <button class="btn btn-card js-open-whatsapp"
-                    data-item="Baguete Presunto e Queijo - pão francês, maionese especial, queijo, presunto e alface">
-              Pedir no WhatsApp
-            </button>
-          </div>
-        </article>
 
-        <!-- ITEM 2 -->
-        <article class="menu-card">
-          <div class="menu-tag menu-tag-new">Sabor marcante</div>
-          <div class="menu-image-wrapper">
-            <!-- TROCAR PELA FOTO REAL -->
-            <img src="./assets/baguete-salame.png"
-                 alt="Baguete de salame e mussarela"
-                 class="menu-image" />
-          </div>
-          <div class="menu-body">
-            <h4>Baguete Salame & Mussarela</h4>
-            <p class="menu-desc">
-              Pão francês, maionese especial, salame, mussarela e alface. Sabor marcante
-              para quem precisa de energia o dia todo.
-            </p>
-            <ul class="menu-details">
-              <li>Perfeito para dias de movimento forte</li>
-              <li>Fica incrível com energético Monster</li>
-            </ul>
+            <div class="menu-price">
+              <span class="price-tag price-tag-highlight">R$ 12,00</span>
+              <span class="price-note">por lanche</span>
+            </div>
+
             <button class="btn btn-card js-open-whatsapp"
-                    data-item="Baguete Salame e Mussarela - pão francês, maionese especial, salame, mussarela e alface">
-              Pedir no WhatsApp
+              data-item="Pão Francês Misto Especial - pão francês, mussarela, presunto, maionese especial, alface e azeite de oliva">
+              Pedir esse lanche no WhatsApp
             </button>
           </div>
         </article>
       </div>
     </section>
 
+    
+
+    <!-- BEBIDAS -->
     <section class="menu-section">
       <div class="section-header">
         <h3>🥤 Bebidas Geladas</h3>
@@ -116,16 +110,20 @@
         <!-- COCA -->
         <article class="menu-card drink-card">
           <div class="menu-image-wrapper drink-image-wrapper">
-            <!-- PODE SER UMA FOTO GENÉRICA -->
-            <img src="./assets/img-coca-cola.png" alt="Coca-Cola lata" class="menu-image" />
+            <img src="./assets/img-coca-cola.png" alt="Coca-Cola lata 310ml" class="menu-image" />
           </div>
           <div class="menu-body">
-            <h4>Coca-Cola Lata 350ml</h4>
+            <h4>Coca-Cola Lata 310ml</h4>
             <p class="menu-desc">
               A clássica geladinha, parceira oficial do intervalo de lojista.
             </p>
-            <button class="btn btn-card js-open-whatsapp"
-                    data-item="Coca-Cola lata 350ml gelada">
+
+            <div class="menu-price">
+              <span class="price-tag">R$ 8,00</span>
+              <span class="price-note">cada lata 310ml</span>
+            </div>
+
+            <button class="btn btn-card js-open-whatsapp" data-item="Coca-Cola lata 310ml gelada">
               Pedir Coca-Cola
             </button>
           </div>
@@ -134,7 +132,6 @@
         <!-- MONSTER -->
         <article class="menu-card drink-card">
           <div class="menu-image-wrapper drink-image-wrapper">
-            <!-- PODE SER UMA FOTO GENÉRICA -->
             <img src="./assets/img-monster1.png" alt="Energético Monster" class="menu-image" />
           </div>
           <div class="menu-body">
@@ -142,15 +139,91 @@
             <p class="menu-desc">
               Pra virar a chave e manter a energia no alto até o fechamento da loja.
             </p>
-            <button class="btn btn-card js-open-whatsapp"
-                    data-item="Energético Monster gelado">
+
+            <div class="menu-price">
+              <span class="price-tag">R$ 15,00</span>
+              <span class="price-note">cada lata</span>
+            </div>
+
+            <button class="btn btn-card js-open-whatsapp" data-item="Energético Monster gelado">
               Pedir Monster
             </button>
           </div>
         </article>
       </div>
     </section>
+
+    <!-- BAGUETES (EM BREVE) -->
+    <section class="menu-section menu-section--soon">
+      <div class="section-header">
+        <div class="section-header-main">
+          <h3>🥖 Baguetes Naturais</h3>
+          <span class="badge-soon">Em breve</span>
+        </div>
+        <p>Esses sabores estarão disponíveis em breve. Aguarde novidades!</p>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Baguete 1 -->
+        <article class="menu-card menu-card--soon">
+          <div class="menu-tag menu-tag-hit">Mais pedido</div>
+          <div class="menu-image-wrapper">
+            <img src="./assets/baguete-presunto e queijo.png" alt="Baguete Presunto e Queijo" class="menu-image" />
+            <div class="soon-overlay">Em breve</div>
+          </div>
+          <div class="menu-body">
+            <h4>Baguete Presunto &amp; Queijo</h4>
+            <p class="menu-desc">
+              Pão baguete com presunto, queijo, maionese especial e alface.
+            </p>
+
+            <div class="menu-price">
+              <span class="price-tag">R$ 20,00</span>
+              <span class="price-note">cada baguete</span>
+            </div>
+
+            <button class="btn btn-card btn-disabled" disabled>Em breve</button>
+          </div>
+        </article>
+
+        <!-- Baguete 2 -->
+        <article class="menu-card menu-card--soon">
+          <div class="menu-tag menu-tag-new">Sabor marcante</div>
+          <div class="menu-image-wrapper">
+            <img src="./assets/baguete-salame.png" alt="Baguete Salame e Mussarela" class="menu-image" />
+            <div class="soon-overlay">Em breve</div>
+          </div>
+          <div class="menu-body">
+            <h4>Baguete Salame &amp; Mussarela</h4>
+            <p class="menu-desc">
+              Pão baguete com salame, mussarela, maionese especial e alface.
+            </p>
+
+            <div class="menu-price">
+              <span class="price-tag">R$ 20,00</span>
+              <span class="price-note">cada baguete</span>
+            </div>
+
+            <button class="btn btn-card btn-disabled" disabled>Em breve</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
   </main>
+
+  <!-- FORMAS DE PAGAMENTO -->
+    <section class="payment-info">
+      <h3>💳 Formas de pagamento</h3>
+      <div class="payment-icons">
+        <div><span>🏦</span> PIX</div>
+        <div><span>💳</span> Débito</div>
+        <div><span>💳</span> Crédito</div>
+      </div>
+      <p class="payment-note">
+        Para lojistas extras, o pagamento é sempre realizado na hora.
+      </p>
+    </section>
 
   <!-- RODAPÉ -->
   <footer class="footer">
@@ -159,11 +232,11 @@
   </footer>
 
   <!-- BOTÃO FLOTANTE -->
-  <button class="whatsapp-float js-open-whatsapp"
-          data-item="Quero fazer um pedido com o cardápio da Lojista Food">
+  <button class="whatsapp-float js-open-whatsapp" data-item="Quero fazer um pedido com o cardápio da Lojista Food">
     💬
   </button>
 
   <script src="script.js"></script>
 </body>
+
 </html>

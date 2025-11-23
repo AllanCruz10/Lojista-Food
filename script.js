@@ -3,7 +3,7 @@
 const PHONE_NUMBER = "5511999999999";
 
 const DEFAULT_MESSAGE =
-  "Olá! Quero fazer um pedido! ";
+  "Olá! Quero fazer um pedido!";
 
 function openWhatsApp(itemText) {
   const text = itemText || DEFAULT_MESSAGE;
