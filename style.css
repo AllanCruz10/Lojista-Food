@@ -32,7 +32,6 @@ body {
 }
 
 /* padrão de fundo */
-
 .bg-pattern {
   position: fixed;
   inset: 0;
@@ -45,7 +44,6 @@ body {
 }
 
 /* AVISO TOPO */
-
 .top-alert {
   position: sticky;
   top: 0;
@@ -60,7 +58,6 @@ body {
 }
 
 /* HEADER / HERO */
-
 .header {
   padding: 12px 20px 10px;
 }
@@ -186,7 +183,6 @@ body {
 }
 
 /* MENU GERAL */
-
 .menu {
   max-width: 1120px;
   margin: 10px auto 40px;
@@ -356,7 +352,6 @@ body {
 }
 
 /* PREÇOS */
-
 .menu-price {
   display: flex;
   align-items: baseline;
@@ -407,15 +402,15 @@ body {
 }
 
 /* FORMAS DE PAGAMENTO */
-
 .payment-info {
-  margin: 22px 0 18px;
+  margin: 22px auto 18px;
   padding: 16px;
   background: #fff4dc;
   border: 2px dashed #ffb52e;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(255, 165, 65, 0.18);
   text-align: center;
+  max-width: 1120px;
 }
 
 .payment-info h3 {
@@ -452,7 +447,6 @@ body {
 }
 
 /* DRINKS */
-
 .drinks-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -466,7 +460,6 @@ body {
 }
 
 /* BAGUETES EM PB */
-
 .menu-section--soon .menu-card--soon {
   filter: grayscale(1);
   opacity: 0.7;
@@ -490,7 +483,6 @@ body {
 }
 
 /* RODAPÉ */
-
 .footer {
   text-align: center;
   padding: 10px 20px 14px;
@@ -504,7 +496,6 @@ body {
 }
 
 /* WHATSAPP FLOAT */
-
 .whatsapp-float {
   position: fixed;
   right: 18px;
@@ -531,7 +522,6 @@ body {
 }
 
 /* ANIMAÇÕES */
-
 @keyframes float {
   0%,
   100% {
@@ -569,7 +559,6 @@ body {
 }
 
 /* RESPONSIVO */
-
 @media (max-width: 900px) {
   .header {
     padding-inline: 14px;
